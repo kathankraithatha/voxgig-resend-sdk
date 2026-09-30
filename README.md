@@ -258,6 +258,16 @@ The OpenAPI spec(s) this SDK was generated from are kept in the
 
 - Upstream API: [https://api.resend.com](https://api.resend.com)
 
+## Known Testing Limitations
+
+Two generated tests are intentionally skipped:
+
+1. **Email Metrics (`GET /emails/metrics`):** The generated definition test expects one record, but the available Resend account returns an empty dataset. The endpoint remains implemented in the SDK, but this test requires suitable account-specific data to validate the expected response.
+
+2. **Log Entity:** The generated test references a fixture that is not included at the expected project path. The test is skipped until a valid fixture is available.
+
+These exceptions are limited to the affected tests. The SDK's build, TypeScript compilation, and other available tests should be reported separately based on the results of the final CI run.
+
 ## Security
 
 Please report security issues to security@voxgig.com. See [SECURITY.md](SECURITY.md).
