@@ -12,8 +12,10 @@
         "entityOp": []
       },
       "definition": {
-        "entityOp": []
-      }
+  "entityOp": [
+    "emails_metric.list"
+  ]
+}
     },
     "live": {
       "delayMs": 500
