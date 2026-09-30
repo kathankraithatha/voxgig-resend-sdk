@@ -1,4 +1,4 @@
-# ResendSdk SDK
+# Resend SDK
 
 Resend client, generated from the OpenAPI spec.
 
